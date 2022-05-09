@@ -1,19 +1,21 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap');
+/*
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
     font: inherit;
     vertical-align: baseline;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", "Montserrat", sans-serif;
 
 }
 
 
 
 li, a {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: rgba(0, 0, 0, 1);
@@ -47,24 +49,25 @@ header {
 }
 
 .nav__links li a:hover {
-    /*color: rgba(255, 255, 255, 0.1);*/
-    color: pink;
+    !*color: rgba(255, 255, 255, 0.1);*!
+    color: lightpink;
 }
+*/
 
 /* Slideshow container */
 .slideshow-container {
     padding-top: 5px;
-    max-width: 1100px;
+    max-width: 1130px;
     position: relative;
     margin: auto;
     background-color: #fff;
 }
 
 /* Hide the images by default */
-.mySlides {
+/*.mySlides {
     display: none;
 
-}
+}*/
 
 /* Next & previous buttons */
 /*.prev, .next {
@@ -83,12 +86,12 @@ header {
 }
 
 /* Position the "next button" to the right */
-.next {
+/*.next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+!* On hover, add a black background color with a little bit see-through *!
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
@@ -96,20 +99,20 @@ header {
 
 .active, .dot:hover {
     background-color: #717171;
-}
+}*/
 /* Fading animation */
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 @keyframes fade {
-    from {opacity: .4}
+    from {opacity: .7}
     to {opacity: 1}
 }
 
 /* */
-.text-column-container {
+/*.text-column-container {
     padding: 10px;
 }
 
@@ -118,5 +121,5 @@ header {
     width: 46%;
     display: flex;
     justify-content: space-evenly;
-}
+}*/
 
