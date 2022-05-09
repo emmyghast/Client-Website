@@ -24,7 +24,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 20px 10%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 .logo {
@@ -45,13 +47,14 @@ header {
 }
 
 .nav__links li a:hover {
-    color: rgba(255, 255, 255, 0.7);
+    /*color: rgba(255, 255, 255, 0.1);*/
+    color: pink;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    padding-top: 0.5%;
-    max-width: 700px;
+    padding-top: 5px;
+    max-width: 1100px;
     position: relative;
     margin: auto;
     background-color: #fff;
@@ -64,7 +67,7 @@ header {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+/*.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -89,6 +92,7 @@ header {
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
+
 
 .active, .dot:hover {
     background-color: #717171;
