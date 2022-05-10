@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap');
 
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -13,10 +12,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: "Poppins", "Montserrat", sans-serif;
 
 }
-
-
-
-
 
 li, a {
     font-family: "Poppins", Montserrat, sans-serif;
@@ -30,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10%;
+    padding: 0.75% 5%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
 }
@@ -45,7 +40,7 @@ header {
 
 .nav__links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 12px;
 }
 
 .nav__links li a {
@@ -61,48 +56,12 @@ header {
 .slideshow-container {
     padding-top: 5px;
     max-width: 1130px;
+    /* max-width: 75%; */
     position: relative;
     margin: auto;
     background-color: #fff;
 }
 
-/* Hide the images by default */
-/*.mySlides {
-    display: none;
-
-}*/
-
-/* Next & previous buttons */
-/*.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-/*.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-!* On hover, add a black background color with a little bit see-through *!
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-
-.active, .dot:hover {
-    background-color: #717171;
-}*/
 /* Fading animation */
 .fade {
     animation-name: fade;
@@ -113,16 +72,3 @@ header {
     from {opacity: .7}
     to {opacity: 1}
 }
-
-/* */
-/*.text-column-container {
-    padding: 10px;
-}
-
-.text-column-1 {
-    padding: 10px;
-    width: 46%;
-    display: flex;
-    justify-content: space-evenly;
-}*/
-
