@@ -67,18 +67,14 @@ header {
     position: relative;
     display: flex;
     flex: 1 2 auto;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     column-gap: 15px;
     row-gap: 10px;
 
 }
-
-/* .image-grid h2 {
-    text-align: center;
-} */
-
 
 .grid-image {
     padding-inline: 10px;
