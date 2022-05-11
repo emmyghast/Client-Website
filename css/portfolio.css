@@ -50,6 +50,13 @@ header {
     color: lightpink;
 }
 
+.quick-para {
+    margin: 0px auto;
+    padding: 5px 1px;
+    text-align: center;
+    font-style: italic;
+}
+
 /* Box */
 .portfolio-page-wrapper {
     margin: 15px;
