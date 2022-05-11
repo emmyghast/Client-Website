@@ -56,28 +56,38 @@ header {
     background-color: #fff;
 }
 
-.image-grid {
+.container {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-
-    max-width: 1000px;
-    justify-content: center;
-    margin: 0 auto;
-    background-color: aquamarine;
+    flex: 1 2 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+    row-gap: 10px;
 
 }
 
-.image-grid h2 {
+/* .image-grid h2 {
     text-align: center;
-}
+} */
+
 
 .grid-image {
-    width: 400px;
     padding-inline: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
     display: block;
-    flex-basis: 100%;
+    flex: 1 1 auto;
+}
+
+img {
+    max-width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
 }
 
 /*@media only screen and (min-width: 1280px) {
