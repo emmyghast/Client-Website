@@ -57,6 +57,33 @@ header {
     font-style: italic;
 }
 
+.content-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
+
+.content-sidebar > *:nth-child(1) {
+    overflow: hidden;
+    flex: 1 0 40%;
+    background-color: lightpink;
+    flex-shrink: 0;
+}
+
+.content-sidebar > *:nth-child(1) h2 {
+    text-align: center;
+    line-height: 14;
+}
+
+.content-sidebar > *:nth-child(2) {
+    flex: 1 1 40%;
+    max-height: 100%;
+
+}
+
+
 /* Box */
 .portfolio-page-wrapper {
     margin: 15px;
@@ -66,7 +93,7 @@ header {
 .container {
     position: relative;
     display: flex;
-    flex: 1 2 auto;
+    flex: 1 1 auto;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -108,32 +135,20 @@ img {
 
 
 @media only screen and (max-width: 800px) {
-    .container {
+    .content-sidebar {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+    }
+    .content-sidebar > *:nth-child(1) {
+
+        padding: 5%;
+    }
+    .content-sidebar > *:nth-child(2) {
+        flex: 0 0 100%;
+        padding: 5%;
         flex-direction: column;
+        overflow: hidden;
+
     }
 }
-
-/*@media only screen and (min-width: 1280px) {
-    .grid-image {
-        flex-basis: 50%;
-    }
-}*/
-
-/*
-    background-color: rgba(49, 122, 44, 1);
-    !*border: 1px black solid;*!
-    padding: 40px;
-    margin: 10px;
-    right: 200px;
-    font-family: "Poppins", "Montserrat", sans-serif;
-    color: white;
-    vertical-align: middle;
-}
-
-.col p {
-    font-size: 24px;
-    position: relative;
-    top: 30%;
-    text-align: center;
-    vertical-align: middle;
-}*/
