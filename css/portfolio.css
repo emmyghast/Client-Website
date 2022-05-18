@@ -47,7 +47,11 @@ header {
 
 .nav__links li a:hover {
     /*color: rgba(255, 255, 255, 0.1);*/
-    color: lightpink;
+    color: lightskyblue;
+}
+
+.fa_bar i {
+    display: none;
 }
 
 .quick-para {
@@ -67,8 +71,8 @@ header {
 
 .content-sidebar > *:nth-child(1) {
     overflow: hidden;
-    flex: 1 0 40%;
-    background-color: lightpink;
+    flex: 1 0 50%;
+    background-color: rgba(19, 141, 117, 1);
     flex-shrink: 0;
 }
 
@@ -78,11 +82,9 @@ header {
 }
 
 .content-sidebar > *:nth-child(2) {
-    flex: 1 1 40%;
-    max-height: 100%;
+    flex: 1 1 50%;
 
 }
-
 
 /* Box */
 .portfolio-page-wrapper {
@@ -116,13 +118,14 @@ img {
 }
 
 .port-title {
-    color: salmon;
+    color: rgba(19, 141, 117, 1);
 }
 
 .img-hover-zoom {
     position: relative;
     max-height: 100%;
     overflow: hidden;
+    border: 5px white solid;
 }
 
 .img-hover-zoom img {
@@ -132,7 +135,9 @@ img {
 .img-hover-zoom:hover img {
     transform: scale(1.03);
 }
-
+@media only screen and (max-width: 1000px) {
+    .nav
+}
 
 @media only screen and (max-width: 800px) {
     .content-sidebar {
@@ -145,9 +150,8 @@ img {
         padding: 5%;
     }
     .content-sidebar > *:nth-child(2) {
-        flex: 0 0 100%;
-        padding: 5%;
-        flex-direction: column;
+        /* flex: 0 0 100%; */
+        flex-direction: row;
         overflow: hidden;
 
     }
