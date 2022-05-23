@@ -91,25 +91,19 @@ header {
 }
 
 .container {
-    position: relative;
     display: flex;
-    flex: 1 1 auto;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    column-gap: 15px;
-    row-gap: 10px;
+}
+
+.gr {
+    width: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: auto;
+    padding-left: 10%;
 
 }
 
-.grid-image {
-    padding-inline: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    display: block;
-    flex: 1 1 auto;
-}
 
 img {
     max-width: 85%;
@@ -152,3 +146,4 @@ img {
 
     }
 }
+
