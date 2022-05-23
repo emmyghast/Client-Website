@@ -20,24 +20,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     box-sizing: border-box;
 }
 
-/*li, a {
-    font-family: "Poppins", Montserrat, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 1);
-    text-decoration: none;
-}
-
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.75% 5%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-}*/
-
 * {
     font-family: "Poppins", "Montserrat", sans-serif;
     box-sizing: border-box;
@@ -149,6 +131,31 @@ a:hover {
         left: 0;
     }
 }
+
+
+/* */
+/*Previous navigation bar, didnt have any responsiveness nor mobile ready*/
+/* */
+
+/*li, a {
+    font-family: "Poppins", Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75% 5%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+}*/
+
+
 /*.logo {
     cursor: pointer;
 }
@@ -219,19 +226,22 @@ a:hover {
 .content-sidebar >*:nth-child(2) img {
     image-resolution: from-image;
     min-width: max-content;
-    object-position: right;
+    object-position: center;
     object-fit: contain;
     display: inline-block;
+
 }
 
 
 
 
 /* Box */
+/*
 .portfolio-page-wrapper {
     margin: 15px;
     background-color: #fff;
 }
+*/
 
 .container {
     display: flex;
@@ -248,10 +258,7 @@ a:hover {
     margin-left: auto;
     padding-left: 7%;
     padding-right: 5%;
-
-
 }
-
 
 img {
     max-width: 100%;
@@ -277,7 +284,7 @@ img {
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1060px) {
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -290,9 +297,16 @@ img {
         box-sizing: border-box;
         display: flex;
         padding-right: 5%;
+        padding-left: 17%;
         /*margin-left: auto;*/
         /*padding-left: 10%;*/
 
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .gr {
+        padding-left: 10%;
     }
 }
 
@@ -300,16 +314,18 @@ img {
     .content-sidebar {
         display: flex;
         flex-wrap: wrap;
-        padding: 5%;
+        /*padding: 5%;*/
+        /*width: 640px;*/
+
     }
     .content-sidebar > *:nth-child(1) {
-        padding: 5%;
+        /*padding: 5%;*/
     }
     .content-sidebar > *:nth-child(2) {
         flex: 0 1 100%;
         flex-direction: column;
-
-
-
+    }
+    .content-sidebar > *:nth-child(2) img {
+        width: 768px;
     }
 }

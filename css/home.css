@@ -11,45 +11,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: "Poppins", "Montserrat", sans-serif;
 }
 
-li, a {
-    font-family: "Poppins", Montserrat, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 1);
-    text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.75% 5%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-}
-
-.logo {
-    cursor: pointer;
-}
-
-.nav__links {
-    list-style: none;
-}
-
-.nav__links li {
-    display: inline-block;
-    padding: 0px 12px;
-}
-
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-    /*color: rgba(255, 255, 255, 0.1);*/
-    color: lightskyblue;
-}
-
 /* Slideshow container */
 .slideshow-container {
     padding-top: 5px;
