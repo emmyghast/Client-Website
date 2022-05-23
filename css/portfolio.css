@@ -1,6 +1,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -11,13 +12,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: "Poppins", "Montserrat", sans-serif;
 }
 
-li, a {
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*li, a {
     font-family: "Poppins", Montserrat, sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
 }
+
 
 header {
     display: flex;
@@ -26,9 +36,120 @@ header {
     padding: 0.75% 5%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
+}*/
+
+* {
+    font-family: "Poppins", "Montserrat", sans-serif;
+    box-sizing: border-box;
 }
 
-.logo {
+body {
+    font-family: "Poppins", "Montserrat", sans-serif;
+}
+
+nav {
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active {
+    /*background: lightgreen;*/
+    transition: all .3s ease 0s;
+    border-bottom: 5px solid rgba(72, 150, 234, 0.97);
+}
+
+a:hover {
+    transition: all 0s ease 0s;
+    border-bottom: 2.5px solid rgba(72, 150, 234, 0.97);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+@media (max-width: 1132px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.6);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover {
+        background: none;
+        color: rgba(0, 0, 0, 0.7);
+        border-bottom: 1px solid rgba(72, 150, 234, 0.97);;
+    }
+    a.active {
+        background: none;
+        color: rgba(0, 0, 0, 1);
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+/*.logo {
     cursor: pointer;
 }
 
@@ -43,23 +164,32 @@ header {
 
 .nav__links li a {
     transition: all 0.3s ease 0s;
+    border-bottom: 5px solid rgba(19, 141, 117, 1);
 }
 
 .nav__links li a:hover {
-    /*color: rgba(255, 255, 255, 0.1);*/
+    !*color: rgba(255, 255, 255, 0.1);*!
     color: lightskyblue;
 }
 
-.fa_bar i {
-    display: none;
+@media only screen and (max-width: 1000px) {
+    header, .nav__links, .nav__links li, .nav__links li a, .nav__links li a:hover{
+        flex-direction: column;
+        padding-bottom: 7.5px;
+    }
 }
 
-.quick-para {
-    margin: 0px auto;
-    padding: 5px 1px;
-    text-align: center;
-    font-style: italic;
-}
+@media only screen and (max-width: 800px) {
+    header,  .nav__links, .nav__links li, .nav__links li a, .nav__links li a:hover{
+        flex-direction: column;
+        justify-items: left;
+        align-items: flex-start;
+    }
+    header img {
+        max-width: 30%;
+    }
+}*/
+
 
 .content-sidebar {
     display: flex;
@@ -71,9 +201,9 @@ header {
 
 .content-sidebar > *:nth-child(1) {
     overflow: hidden;
-    flex: 1 0 50%;
+    flex: 1 1 60%;
     background-color: rgba(19, 141, 117, 1);
-    flex-shrink: 0;
+    height: 389px;
 }
 
 .content-sidebar > *:nth-child(1) h2 {
@@ -82,9 +212,20 @@ header {
 }
 
 .content-sidebar > *:nth-child(2) {
-    flex: 1 1 50%;
-
+    overflow: hidden;
+    flex: 1 1 40%;
 }
+
+.content-sidebar >*:nth-child(2) img {
+    image-resolution: from-image;
+    min-width: max-content;
+    object-position: right;
+    object-fit: contain;
+    display: inline-block;
+}
+
+
+
 
 /* Box */
 .portfolio-page-wrapper {
@@ -95,6 +236,9 @@ header {
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
 }
 
 .gr {
@@ -102,13 +246,15 @@ header {
     box-sizing: border-box;
     display: inline-block;
     margin-left: auto;
-    padding-left: 10%;
+    padding-left: 7%;
+    padding-right: 5%;
+
 
 }
 
 
 img {
-    max-width: 85%;
+    max-width: 100%;
 }
 
 .port-title {
@@ -129,8 +275,25 @@ img {
 .img-hover-zoom:hover img {
     transform: scale(1.03);
 }
+
+
 @media only screen and (max-width: 1000px) {
-    .nav
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+
+    }
+
+    .gr {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        padding-right: 5%;
+        /*margin-left: auto;*/
+        /*padding-left: 10%;*/
+
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -140,14 +303,13 @@ img {
         padding: 5%;
     }
     .content-sidebar > *:nth-child(1) {
-
         padding: 5%;
     }
     .content-sidebar > *:nth-child(2) {
-        /* flex: 0 0 100%; */
-        flex-direction: row;
-        overflow: hidden;
+        flex: 0 1 100%;
+        flex-direction: column;
+
+
 
     }
 }
-
