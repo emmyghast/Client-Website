@@ -59,7 +59,8 @@ a:hover {
 
 .checkbtn {
     font-size: 30px;
-    color: rgba(0, 0, 0, 0.5);
+    /* color: rgba(0, 0, 0, 0.5); */
+    color: black;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -73,7 +74,7 @@ a:hover {
 @media (max-width: 1132px) {
     label.logo {
         font-size: 30px;
-        padding-left: 50px;
+        padding-left: 40px;
     }
     nav ul li a {
         font-size: 16px;
