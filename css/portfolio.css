@@ -111,10 +111,29 @@ header {
     height: 389px;
 }
 
-.content-sidebar > *:nth-child(1) h2 {
+.my-work-title {
+    text-align: center;
+    line-height: 8;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: 3px underline solid rgba(255, 255, 255, 0.4);
+}
+
+.my-work-info {
+    text-align: center;
+    line-height: -3;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Poppins", "Montserrat", sans-serif;
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+
+/* .content-sidebar > *:nth-child(1) h2 {
     text-align: center;
     line-height: 14;
-}
+} */
 
 .content-sidebar > *:nth-child(2) {
     overflow: hidden;
@@ -216,14 +235,15 @@ img {
         /*width: 640px;*/
 
     }
-    .content-sidebar > *:nth-child(1) {
-        /*padding: 5%;*/
-    }
     .content-sidebar > *:nth-child(2) {
         flex: 0 1 100%;
         flex-direction: column;
     }
     .content-sidebar > *:nth-child(2) img {
         width: 768px;
+    }
+    .my-work-info {
+        line-height: 1;
+        padding: 10%;
     }
 }
