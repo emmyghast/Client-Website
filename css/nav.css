@@ -4,12 +4,10 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: "Poppins", "Montserrat", sans-serif;
 }
 
-* {
-    font-family: "Poppins", "Montserrat", sans-serif;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: "Poppins", "Montserrat", sans-serif;
@@ -19,12 +17,12 @@ nav {
     background: white;
     height: 80px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 label.logo {
-    font-size: 35px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 50px;
     font-weight: bold;
 }
 
