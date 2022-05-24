@@ -50,7 +50,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .image-grid {
     padding-top: 25px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 
   }
@@ -61,6 +61,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding-left: 10px;
   }
 
+  .grid-col-span-3 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      border: 2.5px #a775f1 solid;
+      margin-top: 1%;
+      margin-bottom: 1%;
+      margin-right: 1%;
+      background-color: aquamarine;
+  }
+
   @media screen and (max-width: 850px) {
     .image-grid {
         padding-top: 25px;
@@ -69,6 +79,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         gap: 10px;
   }
   .grid-col-span-2 {
-    grid-column: span 2;
-}
+    grid-column-start: 1;
+      grid-column-end: -1;
+  }
+  /*.grid-col-span-3 {
+      grid-column-start: 1;
+      grid-column-end: -1;
+      border: 2.5px #a775f1 solid;
+
+  }*/
+      .grid-col-span-3 {
+          grid-row-start: 1;
+          grid-row-end: 2;
+          border: 2.5px #a775f1 solid;
+          margin-top: 1%;
+          margin-bottom: 1%;
+          margin-right: 1%;
+          background-color: aquamarine;
+      }
 }

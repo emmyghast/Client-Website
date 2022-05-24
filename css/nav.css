@@ -102,6 +102,7 @@ a:hover {
     }
     nav ul li a {
         font-size: 20px;
+        font-family: "Poppins", "Montserrat", sans-serif;
     }
     a:hover {
         background: none;
