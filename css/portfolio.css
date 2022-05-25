@@ -29,73 +29,6 @@ body {
     font-family: "Poppins", "Montserrat", sans-serif;
 }
 
-
-
-/* */
-/*Previous navigation bar, didnt have any responsiveness nor mobile ready*/
-/* */
-
-/*li, a {
-    font-family: "Poppins", Montserrat, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 1);
-    text-decoration: none;
-}
-
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.75% 5%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-}*/
-
-
-/*.logo {
-    cursor: pointer;
-}
-
-.nav__links {
-    list-style: none;
-}
-
-.nav__links li {
-    display: inline-block;
-    padding: 0px 12px;
-}
-
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-    border-bottom: 5px solid rgba(19, 141, 117, 1);
-}
-
-.nav__links li a:hover {
-    !*color: rgba(255, 255, 255, 0.1);*!
-    color: lightskyblue;
-}
-
-@media only screen and (max-width: 1000px) {
-    header, .nav__links, .nav__links li, .nav__links li a, .nav__links li a:hover{
-        flex-direction: column;
-        padding-bottom: 7.5px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    header,  .nav__links, .nav__links li, .nav__links li a, .nav__links li a:hover{
-        flex-direction: column;
-        justify-items: left;
-        align-items: flex-start;
-    }
-    header img {
-        max-width: 30%;
-    }
-}*/
-
-
 .content-sidebar {
     display: flex;
     flex-wrap: wrap;
@@ -165,6 +98,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
     row-gap: 15px;
 }
 
