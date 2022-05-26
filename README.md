@@ -2,8 +2,8 @@
 Source for Client Website
 
 
-TODO
+Website for client. 
 
+I fully understand some if not most of the way I have written/set this up would not be "pratical/professional". 
 
-Seperate the different html pages into different folders to allow for easier navigation
-Use assets sent over, with js modifications to create depth with the images including clickable images
+This is for a Website Development Assignment. 
