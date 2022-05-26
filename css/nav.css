@@ -121,3 +121,24 @@ a:hover {
         left: 0;
     }
 }
+
+@media (max-width: 320px) {
+    label.logo img {
+        padding-left: 0px;
+        object-fit: contain;
+        max-width: 65%;
+        padding-top: 4px;
+    }
+}
+
+@media (max-width: 274px) {
+    label.logo img {
+        display: none;
+    }
+    .checkbtn {
+        display: inline-block;
+        float: left;
+        padding-left: 10%;
+
+    }
+}

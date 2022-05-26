@@ -99,8 +99,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       }
 }*/
 
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
 
-@media screen and (max-width: 1050px) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+@media (max-width: 1050px) {
     .image-grid {
         padding-top: 25px;
         display: grid;
@@ -127,3 +142,4 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         background-color: aquamarine;
     }
 }
+
