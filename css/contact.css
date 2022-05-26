@@ -10,3 +10,74 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
     font-family: "Poppins", "Montserrat", sans-serif;
 }
+body {
+    /*display: grid;*/
+    place-content: normal;
+
+}
+
+.container {
+    max-width: 100%;
+    display: grid;
+    font-size: 20px;
+    margin-top: 1.5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+}
+
+.contact-info {
+    /*width: 100%;*/
+    box-sizing: border-box;
+    margin-inline: auto;
+    padding: 3%;
+
+}
+
+
+
+.contact-info .title{
+    color: green;
+}
+.contact-info .p-text {
+    color: black;
+    text-decoration: none;
+    float: left;
+}
+
+.contact-info .p-text:hover {
+    background: none;
+}
+.contact-info .contact-social:hover {
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-image .image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 870px) {
+    .container {
+        place-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .grid-col-span-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-bottom: 50px;
+    }
+    .grid-col-span-2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .contact-image .image img {
+        object-fit: cover;
+        max-width: 100%;
+    }
+}

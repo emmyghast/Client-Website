@@ -31,9 +31,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   body {
     display: grid;
     place-content: center;
-    /* min-height: 100vh; */
+     /*min-height: 100vh;*/
   
     background-color:white;
+      font-family: "Poppins", "Montserrat", sans-serif;
   }
   
   /* utilities */
@@ -54,6 +55,36 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     gap: 10px;
 
   }
+/*Smart Front Garden CSS*/
+  .image-grid-1 {
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .grid-text-front-garden .name {
+      font-weight: 700 /*bold*/;
+      font-size: 28px;
+      padding-bottom: 10px;
+      color: black;
+  }
+  .grid-text-front-garden .text {
+      font-size: 20px;
+      color: black;
+  }
+
+  .grid-text-front-garden {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      padding: 2.5%;
+
+  }
+.grid-col-span-20 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 2.5%;
+}
 
   .img-grid {
     border-radius: 0.25rem;
@@ -71,33 +102,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       background-color: aquamarine;
   }
 
-  /*@media screen and (max-width: 850px) {
-    .image-grid {
-        padding-top: 25px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-  }
-  .grid-col-span-2 {
-    grid-column-start: 1;
-      grid-column-end: -1;
-  }
-  !*.grid-col-span-3 {
-      grid-column-start: 1;
-      grid-column-end: -1;
-      border: 2.5px #a775f1 solid;
-
-  }*!
-      .grid-col-span-3 {
-          grid-row-start: 1;
-          grid-row-end: 2;
-          border: 2.5px #a775f1 solid;
-          margin-top: 1%;
-          margin-bottom: 1%;
-          margin-right: 1%;
-          background-color: aquamarine;
-      }
-}*/
 
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {
@@ -122,16 +126,27 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-    .grid-col-span-2 {
-        grid-column-start: 1;
-        grid-column-end: -1;
+    /*Smart Front Garden CSS*/
+    .image-grid-1 {
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
     }
-    /*.grid-col-span-3 {
-        grid-column-start: 1;
-        grid-column-end: -1;
-        border: 2.5px #a775f1 solid;
+    .grid-col-span-2 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
 
-    }*/
+    .grid-col-span-20 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .grid-text-front-garden {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    /**/
     .grid-col-span-3 {
         grid-row-start: 1;
         grid-row-end: 2;
