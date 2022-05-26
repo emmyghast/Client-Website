@@ -56,7 +56,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
   }
 /*Smart Front Garden CSS*/
-  .image-grid-1 {
+  .image-grid-1 { /*Main class*/
     padding-top: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -74,18 +74,114 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       color: black;
   }
 
-  .grid-text-front-garden {
+  .grid-text-front-garden { /*Text for front garden*/
       grid-column-start: 2;
       grid-column-end: 4;
       padding: 2.5%;
 
   }
-.grid-col-span-20 {
+.grid-col-span-20 { /*Portrait image*/
     grid-column-start: 1;
     grid-column-end: 2;
     padding-left: 2.5%;
 }
 
+@media (min-width: 1050px) {
+    .left-image {
+        margin-left: 5%;
+    }
+
+    .left-bottom-image {
+        margin-left: 2.6%;
+    }
+}
+@media (max-width: 1050px) {
+    .image-grid-1 {
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+    }
+    .grid-col-span-2 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+
+    .grid-col-span-20 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .grid-text-front-garden {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+/* */
+/*Urban Oasis CSS*/
+.image-grid-urban-oasis { /*Main class*/
+    place-content: center;
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*gap: 10px;*/
+}
+
+.grid-text-urban-oasis .name {
+    text-align: center;
+    font-weight: 700 /*bold*/;
+    font-size: 28px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.grid-text-urban-oasis {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.grid-text-urban-oasis .text {
+    font-size: 20px;
+    color: black;
+}
+@media (min-width: 1050px) {
+    .grid-text-urban-oasis {
+        margin-left: 0.7%;
+    }
+}
+
+@media (max-width: 980px) {
+    .image-grid-urban-oasis {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .urban-oasis-span-2 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+    .grid-text-urban-oasis {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+@media (max-width: 660px) {
+    .urban-oasis-span-2 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    .grid-text-urban-oasis {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-bottom: 10px;
+    }
+}
+/* */
   .img-grid {
     border-radius: 0.25rem;
     max-width: 95%;
@@ -126,26 +222,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-    /*Smart Front Garden CSS*/
-    .image-grid-1 {
-        padding-top: 25px;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 10px;
-    }
-    .grid-col-span-2 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-    }
-
-    .grid-col-span-20 {
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-    .grid-text-front-garden {
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
     /**/
     .grid-col-span-3 {
         grid-row-start: 1;
@@ -158,3 +234,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
 }
 
+@media (max-width: 650px) {
+    .grid-col-span-2 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    .grid-col-span-20 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+    .grid-text-front-garden {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
