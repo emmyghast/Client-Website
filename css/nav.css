@@ -8,12 +8,14 @@
 }
 
 
-
 body {
     font-family: "Poppins", "Montserrat", sans-serif;
 }
 
-label.img { max-width: 100%; height: auto }
+label.img {
+    max-width: 100%;
+    height: auto
+}
 
 nav {
     background: white;
@@ -47,6 +49,7 @@ nav ul li a {
     border-radius: 3px;
     text-transform: uppercase;
 }
+
 .nav-bar.active {
     /*background: lightgreen;*/
     transition: all .3s ease 0s;
@@ -55,7 +58,7 @@ nav ul li a {
 
 .nav-bar-hover:hover {
     transition: all 0s ease 0s;
-    border-bottom: 2.5px solid rgba(72, 150, 234, 0.97);
+    border-bottom: 3px solid rgba(72, 150, 234, 0.97);
 }
 
 .checkbtn {
@@ -69,14 +72,16 @@ nav ul li a {
     display: none;
 }
 
-#check{
+#check {
     display: none;
 }
+
 @media (max-width: 1132px) {
     label.logo {
         font-size: 30px;
         padding-left: 10px;
     }
+
     nav ul li a {
         font-size: 16px;
     }
@@ -86,9 +91,11 @@ nav ul li a {
     label.logo {
         padding-left: 10px;
     }
+
     .checkbtn {
         display: block;
     }
+
     ul {
         position: fixed;
         width: 100%;
@@ -100,20 +107,24 @@ nav ul li a {
         transition: all .5s;
         z-index: 1;
     }
+
     nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
+
     nav ul li a {
         font-size: 20px;
         font-family: "Poppins", "Montserrat", sans-serif;
     }
+
     .nav-bar-hover:hover {
         background: none;
         color: rgba(0, 0, 0, 0.7);
         border-bottom: 1px solid rgba(72, 150, 234, 0.97);;
     }
+
     .nav-bar.active {
         background: none;
         color: rgba(0, 0, 0, 1);
@@ -126,7 +137,7 @@ nav ul li a {
 
 @media (max-width: 320px) {
     label.logo img {
-        padding-left: 0px;
+        padding-left: 0;
         object-fit: contain;
         max-width: 65%;
         padding-top: 4px;
@@ -137,6 +148,7 @@ nav ul li a {
     label.logo img {
         display: none;
     }
+
     .checkbtn {
         display: inline-block;
         float: left;
