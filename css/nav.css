@@ -26,6 +26,8 @@ nav {
 }
 
 label.logo {
+    max-width: 100%;
+    height: auto;
     line-height: 80px;
     padding: 0 20px;
     font-weight: bold;

@@ -36,6 +36,10 @@ body {
 
 }
 
+.image img {
+    max-width: 100%;
+    height: auto;
+}
 
 .contact-info .title {
     color: green;
@@ -52,8 +56,8 @@ body {
 }
 
 .contact-info .contact-social:hover {
-    background: none;
-    text-decoration: none;
+    /*background: none;*/
+    text-decoration: underline blue;
     cursor: pointer;
 }
 
