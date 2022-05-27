@@ -13,6 +13,8 @@ body {
     font-family: "Poppins", "Montserrat", sans-serif;
 }
 
+label.img { max-width: 100%; height: auto }
+
 nav {
     background: white;
     height: 80px;
