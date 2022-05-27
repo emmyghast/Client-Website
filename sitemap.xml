@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://emmyghast.github.io/Client-Website/html/home/home.html</loc>
+  <lastmod>2022-05-27T11:35:17+00:00</lastmod>
+</url>
+  <url>
+    <loc>https://emmyghast.github.io/Client-Website/html/portfolio/portfolio.html</loc>
+    <lastmod>2022-05-27T11:35:17+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://emmyghast.github.io/Client-Website/html/testimonial/testimonial.html</loc>
+    <lastmod>2022-05-27T11:35:17+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://emmyghast.github.io/Client-Website/html/contact/contact.html</loc>
+    <lastmod>2022-05-27T11:35:17+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://emmyghast.github.io/Client-Website/html/portfolio/urban_oasis/urban_oasis.html</loc>
+    <lastmod>2022-05-27T11:35:17+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://emmyghast.github.io/Client-Website/html/portfolio/smart_front_garden/smart_front_garden.html</loc>
+    <lastmod>2022-05-27T11:35:17+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://emmyghast.github.io/Client-Website/html/portfolio/urban_chic/urban_chic.html</loc>
+    <lastmod>2022-05-27T11:35:17+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://emmyghast.github.io/Client-Website/html/portfolio/urban_garden_sanctuary/urban_garden_sanctuary.html</loc>
+    <lastmod>2022-05-27T11:35:17+00:00</lastmod>
+  </url>
+
+
+</urlset>
