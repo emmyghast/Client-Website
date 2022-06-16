@@ -46,7 +46,7 @@ body {
 
 .contact-info .p-text {
     color: black;
-    text-decoration: none;
+    text-decoration: underline blue;
     float: left;
 }
 
