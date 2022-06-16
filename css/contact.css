@@ -46,8 +46,11 @@ body {
 
 .contact-info .p-text {
     color: black;
-    text-decoration: underline blue;
     float: left;
+}
+
+.contact-info .contact-social {
+    text-decoration: underline blue;
 }
 
 .contact-info .p-text:hover {
